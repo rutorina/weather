@@ -1,0 +1,76 @@
+/* RESET */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+input,
+button,
+select {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+}
+
+/* VARIABLES */
+:root {
+  /* COLORS */
+  --color-primary: #fff;
+  --bg-color: #000000a4;
+  /* FONTS */
+}
+
+/* GLOBAL */
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #333;
+}
+
+footer {
+  justify-self: flex-end;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  background-color: #00000077;
+  font-size: 1.5rem;
+}
+
+.background-image {
+  background-image: url("../icons/rain_background.jpg");
+  background-size: cover;
+  background-position: center;
+  position: absolute;
+  width: 100%;
+  height: 100vh;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  filter: blur(3px);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+  width: 90%;
+  position: relative;
+  background-color: var(--bg-color);
+  margin-bottom: auto;
+  margin-top: auto;
+  border-radius: 2rem;
+}

@@ -15,6 +15,7 @@
 </head>
 
 <body>
+    <div class="background-image"></div>
     <main>
         <section class="city">
             <input type="text" id="city-input" placeholder="Enter city name">
@@ -80,120 +81,120 @@
                     </div>
                 </section>
             </section>
-
-            <section class="forecast">
-                <section class="forecast__hourly">
-                    <h2 class="">Hourly forecast</h2>
-                    <section class="forecast__item">
-                        <h3 class="item-description">Now</h3>
-                        <p class="forecast__hourly-value">28&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">13:00</h3>
-                        <p class="forecast__hourly-value">29&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">14:00</h3>
-                        <p class="forecast__hourly-value">30&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">15:00</h3>
-                        <p class="forecast__hourly-value">31&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">16:00</h3>
-                        <p class="forecast__hourly-value">32&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">17:00</h3>
-                        <p class="forecast__hourly-value">33&deg;</p>
-                        <p>Rainy</p>
-                    </section>
+        </section>
+        <section class="forecast">
+            <section class="forecast__hourly">
+                <h2 class="">Hourly forecast</h2>
+                <section class="forecast__item">
+                    <h3 class="item-description">Now</h3>
+                    <p class="forecast__hourly-value">28&deg;</p>
+                    <p>Rainy</p>
                 </section>
-
-                <section class="forecast__days">
-                    <h2 class="">Hourly forecast</h2>
-                    <section class="forecast__item">
-                        <h3 class="item-description">Today</h3>
-                        <p class="forecast__date">16/09</p>
-                        <p class="forecast__hourly-value">28&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">Thu</h3>
-                        <p class="forecast__date">17/09</p>
-                        <p class="forecast__hourly-value">29&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">Fri</h3>
-                        <p class="forecast__date">18/09</p>
-                        <p class="forecast__hourly-value">30&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">Sat</h3>
-                        <p class="forecast__date">19/09</p>
-                        <p class="forecast__hourly-value">31&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">Sun</h3>
-                        <p class="forecast__date">20/09</p>
-                        <p class="forecast__hourly-value">32&deg;</p>
-                        <p>Rainy</p>
-                    </section>
-                    <section class="forecast__item">
-                        <h3 class="item-description">Mon</h3>
-                        <p class="forecast__date">21/09</p>
-                        <p class="forecast__hourly-value">33&deg;</p>
-                        <p>Rainy</p>
-                    </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">13:00</h3>
+                    <p class="forecast__hourly-value">29&deg;</p>
+                    <p>Rainy</p>
                 </section>
-                <section class="forecast__additional-info">
-                    <section class="forecast__uv">
-                        <h3 class="item-description"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
-                                viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
-                                <path
-                                    d="M520-520v-80h200v80H520Zm0-160v-80h320v80H520ZM320-120q-83 0-141.5-58.5T120-320q0-48 21-89.5t59-70.5v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q38 29 59 70.5t21 89.5q0 83-58.5 141.5T320-120ZM200-320h240q0-29-12.5-54T392-416l-32-24v-280q0-17-11.5-28.5T320-760q-17 0-28.5 11.5T280-720v280l-32 24q-23 17-35.5 42T200-320Z" />
-                            </svg>UV Index</h3>
-                        <p class="forecast__hourly-value">3</p>
-                        <p class="forecast__uv-desctiption">Moderate</p>
-                        <div class="progress-bar"></div>
-                        <p class="forecast__uv-additional-info">Use sun protection until 16:00</p>
-                    </section>
-                    <section class="forecast__wind">
-                        <div class="forecast__wind-data">
-                            <div class="forecast__wind-top-seciton">
-                                <h3 class="item-description">3
-                                    <span class="">
-                                        <span class="speed">MPH</span>
-                                        <span class="data">Wind</span>
-                                    </span>
-                                </h3>
-                            </div>
-                            <div class="forecast__wind-bottom-section">
-                                <h3 class="item-description">9
-                                    <span class=""> 
-                                        <span class="speed">MPH</span>
-                                        <span class="data">Gusts</span>
-                                    </span>
-                                </h3>
-                            </div>
-
-                        </div>
-                        <div class="compass">
-                            <!-- cool compass which reflects where the wind is going -->
-                        </div>
-                    </section>
-
+                <section class="forecast__item">
+                    <h3 class="item-description">14:00</h3>
+                    <p class="forecast__hourly-value">30&deg;</p>
+                    <p>Rainy</p>
+                </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">15:00</h3>
+                    <p class="forecast__hourly-value">31&deg;</p>
+                    <p>Rainy</p>
+                </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">16:00</h3>
+                    <p class="forecast__hourly-value">32&deg;</p>
+                    <p>Rainy</p>
+                </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">17:00</h3>
+                    <p class="forecast__hourly-value">33&deg;</p>
+                    <p>Rainy</p>
                 </section>
             </section>
+
+            <section class="forecast__days">
+                <h2 class="">Hourly forecast</h2>
+                <section class="forecast__item">
+                    <h3 class="item-description">Today</h3>
+                    <p class="forecast__date">16/09</p>
+                    <p class="forecast__hourly-value">28&deg;</p>
+                    <p>Rainy</p>
+                </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">Thu</h3>
+                    <p class="forecast__date">17/09</p>
+                    <p class="forecast__hourly-value">29&deg;</p>
+                    <p>Rainy</p>
+                </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">Fri</h3>
+                    <p class="forecast__date">18/09</p>
+                    <p class="forecast__hourly-value">30&deg;</p>
+                    <p>Rainy</p>
+                </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">Sat</h3>
+                    <p class="forecast__date">19/09</p>
+                    <p class="forecast__hourly-value">31&deg;</p>
+                    <p>Rainy</p>
+                </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">Sun</h3>
+                    <p class="forecast__date">20/09</p>
+                    <p class="forecast__hourly-value">32&deg;</p>
+                    <p>Rainy</p>
+                </section>
+                <section class="forecast__item">
+                    <h3 class="item-description">Mon</h3>
+                    <p class="forecast__date">21/09</p>
+                    <p class="forecast__hourly-value">33&deg;</p>
+                    <p>Rainy</p>
+                </section>
+            </section>
+            <section class="forecast__additional-info">
+                <section class="forecast__uv">
+                    <h3 class="item-description"><svg xmlns="http://www.w3.org/2000/svg" height="24px"
+                            viewBox="0 -960 960 960" width="24px" fill="#e3e3e3">
+                            <path
+                                d="M520-520v-80h200v80H520Zm0-160v-80h320v80H520ZM320-120q-83 0-141.5-58.5T120-320q0-48 21-89.5t59-70.5v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q38 29 59 70.5t21 89.5q0 83-58.5 141.5T320-120ZM200-320h240q0-29-12.5-54T392-416l-32-24v-280q0-17-11.5-28.5T320-760q-17 0-28.5 11.5T280-720v280l-32 24q-23 17-35.5 42T200-320Z" />
+                        </svg>UV Index</h3>
+                    <p class="forecast__hourly-value">3</p>
+                    <p class="forecast__uv-desctiption">Moderate</p>
+                    <div class="progress-bar"></div>
+                    <p class="forecast__uv-additional-info">Use sun protection until 16:00</p>
+                </section>
+                <section class="forecast__wind">
+                    <div class="forecast__wind-data">
+                        <div class="forecast__wind-top-seciton">
+                            <h3 class="item-description">3
+                                <span class="">
+                                    <span class="speed">MPH</span>
+                                    <span class="data">Wind</span>
+                                </span>
+                            </h3>
+                        </div>
+                        <div class="forecast__wind-bottom-section">
+                            <h3 class="item-description">9
+                                <span class="">
+                                    <span class="speed">MPH</span>
+                                    <span class="data">Gusts</span>
+                                </span>
+                            </h3>
+                        </div>
+
+                    </div>
+                    <div class="compass">
+                        <!-- cool compass which reflects where the wind is going -->
+                    </div>
+                </section>
+
+            </section>
+
     </main>
     <footer>
         <p>
