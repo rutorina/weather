@@ -22,8 +22,9 @@ select {
   --color-primary: #fff;
   --color-secondary: #999;
   --bg-color-transparent: #000000a4;
-  --bg-color-secondary-transparent: #34333cec;
-  --bg-color-secondary: #34333c;
+  --bg-color-secondary-transparent: #36343fa4;
+  --bg-color-secondary: #464552;
+  --bg-dark-transparent: #1a1616b6;
   --main-gradient: linear-gradient(
     to top right,
     rgb(0, 47, 255),
@@ -84,7 +85,7 @@ footer {
 main {
   padding: 2rem;
   height: 85vh;
-  width: 80%;
+  width: 70%;
   position: relative;
   background-color: var(--bg-color-transparent);
   margin-bottom: auto;
@@ -96,12 +97,6 @@ main {
   gap: 1rem;
 }
 
-/* DELETE AFTER */
-main > section {
-  border: 2px red solid;
-  border-radius: 2rem;
-}
-
 /* TODAYS FORECAST */
 
 .city {
@@ -109,7 +104,7 @@ main > section {
   display: flex;
   flex-direction: column;
   gap: 1rem;
-  max-width: 600px;
+  max-width: 550px;
 }
 
 /* INPUT */
@@ -142,7 +137,6 @@ main > section {
 /* TODAY */
 
 .today-weather {
-  border: 2px solid red;
   border-radius: 1.5rem;
   padding: 1rem;
   position: relative;
@@ -216,8 +210,8 @@ main > section {
   justify-content: start;
   padding: 1rem;
   background-color: var(--bg-color-secondary-transparent);
-  width: 250px;
-  height: 170px;
+  width: 225px;
+  height: 160px;
   border-radius: 1.5rem;
 }
 
@@ -252,14 +246,12 @@ main > section {
   margin-top: auto;
 }
 
-
-
 /* FORECAST */
 
 .forecast {
   display: flex;
-  justify-content: center;
-  align-items: center;
+  /* justify-content: center; */
+  /* align-items: center; */
   flex-direction: column;
   gap: 1rem;
   width: 100%;
@@ -269,9 +261,88 @@ main > section {
   display: flex;
   justify-content: center;
   align-items: center;
+  /* flex-direction: row; */
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+  border-radius: 1rem;
+}
+
+/* HOURLY FORECAST */
+
+.forecast__hourly {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--bg-dark-transparent);
+}
+
+.forecast  h2 {
+  /* font-size: 2.5rem; */
+  text-align: left;
+  width: 100%;
+  border-bottom: 1px solid var(--color-secondary);
+  /* color: var(--color-primary); */
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
+  padding-bottom: 0.5rem;
+}
+
+.forecast__hourly-item-container {
+  display: flex;
+  justify-content: space-between;
   flex-direction: row;
   gap: 1rem;
   width: 100%;
   padding: 1rem;
-  border-radius: 1.5rem;
+}
+
+.forecast__item {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 6rem;
+}
+
+.forecast__item .item-description {
+  font-size: 1rem;
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.active {
+  background-color: var(--bg-color-secondary);
+  border-radius: 1rem;
+}
+
+/* 10DAY */
+
+.forecast__days {
+  display: flex;
+  justify-content: start;
+  align-items: start;
+  flex-direction: column;
+  gap: 1rem;
+  background-color: var(--bg-dark-transparent);
+}
+
+.forecast__hourly-item-container{
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  gap: 1rem;
+  width: 100%;
+  padding: 1rem;
+}
+
+.forecast__date{
+  font-size: 0.8rem;
+  color: var(--color-secondary);
+  text-align: center;
+  margin-bottom: 0.5rem;
 }
