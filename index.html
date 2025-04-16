@@ -25,15 +25,15 @@
             <section class="today-weather">
                 <div class="background"></div>
                 <section class="today-weather__header">
-                    <h1 class="degrees">28&deg;</h1>
+                    <h1 class="degrees" id="current-temperature">28&deg;</h1>
                     <h2 class="day">
                         Rainy Day
                     </h2>
-
+<!-- 
                     <p class="day-description">
                         Today, expect a rainy day with temperatures reaching up to 28&deg;C. Make sure to grab your
                         umbrella and raincoat before heading out.
-                    </p>
+                    </p> -->
                 </section>
 
                 <section class="today-weather__details">
@@ -43,9 +43,9 @@
                                 <path
                                     d="M520-520v-80h200v80H520Zm0-160v-80h320v80H520ZM320-120q-83 0-141.5-58.5T120-320q0-48 21-89.5t59-70.5v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q38 29 59 70.5t21 89.5q0 83-58.5 141.5T320-120ZM200-320h240q0-29-12.5-54T392-416l-32-24v-280q0-17-11.5-28.5T320-760q-17 0-28.5 11.5T280-720v280l-32 24q-23 17-35.5 42T200-320Z" />
                             </svg>Feels like</h3>
-                        <p class="details-item-value">30&deg;</p>
+                        <p class="details-item-value" id="feels-like">30&deg;</p>
                         <p class="details-item-additional-info">
-                            Humidity is making it feel warmer
+                            Humidity is making it feel <span id="how-it-feels">warmer</span>
                             <!-- warmer will change depending on if degree today is higher then how it feels or lower  -->
                         </p>
                     </div>
@@ -55,8 +55,8 @@
                                 <path
                                     d="M491-200q12-1 20.5-9.5T520-230q0-14-9-22.5t-23-7.5q-41 3-87-22.5T343-375q-2-11-10.5-18t-19.5-7q-14 0-23 10.5t-6 24.5q17 91 80 130t127 35ZM480-80q-137 0-228.5-94T160-408q0-100 79.5-217.5T480-880q161 137 240.5 254.5T800-408q0 140-91.5 234T480-80Zm0-80q104 0 172-70.5T720-408q0-73-60.5-165T480-774Q361-665 300.5-573T240-408q0 107 68 177.5T480-160Zm0-320Z" />
                             </svg>Percipitation</h3>
-                        <p class="details-item-value">2.3"<span class="item-value-description">in last 24h</span></p>
-                        <p class="details-item-additional-info">2" expected in next 24h
+                        <p class="details-item-value" id="percipitation"><span class="percipitation-value">2.3"</span><span class="item-value-description">in last 24h</span></p>
+                        <p class="details-item-additional-info"><span class="percipitation-value">2"</span> expected in next 24h
                             <!-- 2 inch is changable variable. Basically floor(value) -->
                         </p>
                     </div>
@@ -66,7 +66,7 @@
                                 <path
                                     d="M480-320q75 0 127.5-52.5T660-500q0-75-52.5-127.5T480-680q-75 0-127.5 52.5T300-500q0 75 52.5 127.5T480-320Zm0-72q-45 0-76.5-31.5T372-500q0-45 31.5-76.5T480-608q45 0 76.5 31.5T588-500q0 45-31.5 76.5T480-392Zm0 192q-146 0-266-81.5T40-500q54-137 174-218.5T480-800q146 0 266 81.5T920-500q-54 137-174 218.5T480-200Zm0-300Zm0 220q113 0 207.5-59.5T832-500q-50-101-144.5-160.5T480-720q-113 0-207.5 59.5T128-500q50 101 144.5 160.5T480-280Z" />
                             </svg>Visibility</h3>
-                        <p class="details-item-value">6 mi
+                        <p class="details-item-value" id="visibility">6 mi
                             <!-- Will change depending on api return -->
                         </p>
                     </div>
@@ -76,8 +76,8 @@
                                 <path
                                     d="M480-100q-133 0-226.5-92T160-416q0-63 24.5-120.5T254-638l226-222 226 222q45 44 69.5 101.5T800-416q0 132-93.5 224T480-100ZM240-416h480q0-47-18-89.5T650-580L480-748 310-580q-34 32-52 74.5T240-416Z" />
                             </svg>Humidity</h3>
-                        <p class="details-item-value">82%</p>
-                        <p class="details-item-additional-info">The dew point is 25&deg; right now</p>
+                        <p class="details-item-value" id="humidity">82%</p>
+                        <!-- <p class="details-item-additional-info">The dew point is 25&deg; right now</p> -->
                     </div>
                 </section>
             </section>
@@ -94,31 +94,31 @@
                 <section class="forecast__hourly-item-container">
                     <section class="forecast__item active">
                         <h3 class="item-description">Now</h3>
-                        <p class="forecast__hourly-value">28&deg;</p>
-                        <p>Rainy</p>
+                        <p class="forecast__hourly-value" id="now-temp">28&deg;</p>
+                        <p id="now-weather">Rainy</p>
 
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="hour-1">
                         <h3 class="item-description">13:00</h3>
                         <p class="forecast__hourly-value">29&deg;</p>
                         <p>Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="hour-2">
                         <h3 class="item-description">14:00</h3>
                         <p class="forecast__hourly-value">30&deg;</p>
                         <p>Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="hour-3">
                         <h3 class="item-description">15:00</h3>
                         <p class="forecast__hourly-value">31&deg;</p>
                         <p>Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="hour-4">
                         <h3 class="item-description">16:00</h3>
                         <p class="forecast__hourly-value">32&deg;</p>
                         <p>Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="hour-5">
                         <h3 class="item-description">17:00</h3>
                         <p class="forecast__hourly-value">33&deg;</p>
                         <p>Rainy</p>
@@ -135,35 +135,35 @@
                 <section class="forecast__hourly-item-container">
                     <section class="forecast__item active">
                         <h3 class="item-description">Today</h3>
-                        <p class="forecast__date">16/09</p>
-                        <p class="forecast__hourly-value">28&deg;</p>
-                        <p>Rainy</p>
+                        <p class="forecast__date" id="today-date">16/09</p>
+                        <p class="forecast__hourly-value" id="today-temp">28&deg;</p>
+                        <p id="today-weather">Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="day-1">
                         <h3 class="item-description">Thu</h3>
                         <p class="forecast__date">17/09</p>
                         <p class="forecast__hourly-value">29&deg;</p>
                         <p>Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="day-2">
                         <h3 class="item-description">Fri</h3>
                         <p class="forecast__date">18/09</p>
                         <p class="forecast__hourly-value">30&deg;</p>
                         <p>Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="day-3">
                         <h3 class="item-description">Sat</h3>
                         <p class="forecast__date">19/09</p>
                         <p class="forecast__hourly-value">31&deg;</p>
                         <p>Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="day-4">
                         <h3 class="item-description">Sun</h3>
                         <p class="forecast__date">20/09</p>
                         <p class="forecast__hourly-value">32&deg;</p>
                         <p>Rainy</p>
                     </section>
-                    <section class="forecast__item">
+                    <section class="forecast__item" id="day-5">
                         <h3 class="item-description">Mon</h3>
                         <p class="forecast__date">21/09</p>
                         <p class="forecast__hourly-value">33&deg;</p>
@@ -178,8 +178,8 @@
                             <path
                                 d="M520-520v-80h200v80H520Zm0-160v-80h320v80H520ZM320-120q-83 0-141.5-58.5T120-320q0-48 21-89.5t59-70.5v-240q0-50 35-85t85-35q50 0 85 35t35 85v240q38 29 59 70.5t21 89.5q0 83-58.5 141.5T320-120ZM200-320h240q0-29-12.5-54T392-416l-32-24v-280q0-17-11.5-28.5T320-760q-17 0-28.5 11.5T280-720v280l-32 24q-23 17-35.5 42T200-320Z" />
                         </svg>UV Index</h3>
-                    <p class="forecast__hourly-value">3</p>
-                    <p class="forecast__uv-desctiption">Moderate</p>
+                    <p class="forecast__hourly-value" id="uv-index">3</p>
+                    <!-- <p class="forecast__uv-desctiption">Moderate</p> -->
                     <!-- <div class="progress-bar"></div> -->
                     <p class="forecast__uv-additional-info">Use sun protection until 16:00</p>
                 </section>
@@ -193,21 +193,21 @@
                             </svg>WIND
                         </h3>
                         <div class="forecast__wind-top-seciton">
-                            <h3 class="item-description">3
+                            <h3 class="item-description" id="wind-speed">3
                                 <span class="">
-                                    <span class="speed">MPH</span>
+                                    <span class="speed">KM/H</span>
                                     <span class="data">Wind</span>
                                 </span>
                             </h3>
                         </div>
-                        <div class="forecast__wind-bottom-section">
+                        <!-- <div class="forecast__wind-bottom-section">
                             <h3 class="item-description">9
                                 <span class="">
                                     <span class="speed">MPH</span>
                                     <span class="data">Gusts</span>
                                 </span>
                             </h3>
-                        </div>
+                        </div> -->
 
                     </div>
                 </section>
